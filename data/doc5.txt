@@ -1,0 +1,17 @@
+As you might have observed from the simple program in the previous section, OpenGL 
+commands use the prefix gl and initial capital letters for each word making up the command name 
+(recall glClearColor(), for example). Similarly, OpenGL defined constants begin with GL_, use all capital letters,
+ and use underscores to separate words (like GL_COLOR_BUFFER_BIT).
+
+You might also have noticed some seemingly extraneous letters appended to some command names 
+(for example, the 3f in glColor3f() and glVertex3f()). It's true that the Color part of the command 
+name glColor3f() is enough to define the command as one that sets the current color. However, more 
+than one such command has been defined so that you can use different types of arguments. In particular, 
+the 3 part of the suffix indicates that three arguments are given; another version of the Color command takes 
+four arguments. The f part of the suffix indicates that the arguments are floating-point numbers. Having different 
+formats allows OpenGL to accept the user's data in his or her own data format.
+
+Some OpenGL commands accept as many as 8 different data types for their arguments. The letters used as 
+suffixes to specify these data types for ISO C implementations of OpenGL are shown in Table 1-1, along with
+ the corresponding OpenGL type definitions. The particular implementation of OpenGL that you're using might not 
+follow this scheme exactly; an implementation in C++ or Ada, for example, wouldn't need to. 

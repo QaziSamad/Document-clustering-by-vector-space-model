@@ -1,0 +1,18 @@
+OpenGL is a software interface to graphics hardware. This interface consists of about 150 distinct commands that you use to specify the objects and operations needed to produce interactive three-dimensional applications.
+
+OpenGL is designed as a streamlined, hardware-independent interface to be implemented on many 
+different hardware platforms. To achieve these qualities, no commands for performing windowing tasks or 
+obtaining user input are included in OpenGL; instead, you must work through whatever windowing system controls 
+the particular hardware you're using. Similarly, OpenGL doesn't provide high-level commands for describing 
+models of three-dimensional objects. Such commands might allow you to specify relatively complicated shapes 
+such as automobiles, parts of the body, airplanes, or molecules. With OpenGL, you must build up your desired model 
+from a small set of geometric primitives - points, lines, and polygons. 
+
+In some implementations (such as with the X Window System), OpenGL is designed to work even if the computer 
+that displays the graphics you create isn't the computer that runs your graphics program. This might be the 
+case if you work in a networked computer environment where many computers are connected to one another by a 
+digital network. In this situation, the computer on which your program runs and issues OpenGL drawing commands 
+is called the client, and the computer that receives those commands and performs the drawing is called the server. 
+The format for transmitting OpenGL commands (called the protocol) from the client to the server is always the same, 
+so OpenGL programs can work across a network even if the client and server are different kinds of computers. 
+If an OpenGL program isn't running across a network, then there's only one computer, and it is both the client and the server. 

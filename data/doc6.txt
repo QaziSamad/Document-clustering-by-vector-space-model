@@ -1,0 +1,16 @@
+As you know, OpenGL contains rendering commands but is designed to be independent of any window system or operating system.
+ Consequently, it contains no commands for opening windows or reading events from the keyboard or mouse. Unfortunately, 
+it's impossible to write a complete graphics program without at least opening a window, and most interesting programs 
+require a bit of user input or other services from the operating system or window system. In many cases, complete 
+programs make the most interesting examples, so this book uses GLUT to simplify opening windows, detecting input, and 
+so on. If you have an implementation of OpenGL and GLUT on your system, the examples in this book should run without 
+change when linked with them.In addition, since OpenGL drawing commands are limited to those that generate simple 
+geometric primitives (points, lines, and polygons), GLUT includes several routines that create more complicated 
+three-dimensional objects such as a sphere, a torus, and a teapot. This way, snapshots of program output can be 
+interesting to look at. (Note that the OpenGL Utility Library, GLU, also has quadrics routines that create some of 
+the same three-dimensional objects as GLUT, such as a sphere, cylinder, or cone.)
+
+GLUT may not be satisfactory for full-featured OpenGL applications, but you may find it a useful starting point for 
+learning OpenGL. The rest of this section briefly describes a small subset of GLUT routines so that you can follow the 
+programming examples in the rest of this book. (See Appendix D for more details about this subset of GLUT, or see 
+Chapters 4 and 5 of OpenGL Programming for the X Window System for information about the rest of GLUT.) 
